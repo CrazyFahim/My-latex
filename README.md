@@ -1,4 +1,4 @@
-# My-latex
+# My-LaTeX
 My shitty attempt to use latex in vscode in an unorthodox manner  :") 
 
 # References: 
