@@ -3,7 +3,8 @@ My shitty attempt to use latex in vscode in an unorthodox manner  :")
 
 # References: 
 [LINK 1](https://www.youtube.com/watch?v=5jmIHOWpEg0)\
-[LINK 2](https://www.youtube.com/watch?v=ydOTMQC7np0&t=1206s) 
+[LINK 2](https://www.youtube.com/watch?v=ydOTMQC7np0&t=1206s)\
+[LINK 3](https://www.youtube.com/watch?v=y8y_KIs9JLs)
 
 (NB: new links will be added in future.) 
 
