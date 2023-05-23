@@ -1,0 +1,98 @@
+%% 
+%% This is file `exercise.sty' generated
+%% on 1991124 with the docstrip utility (v1.1l test). 
+%% 
+%% The original source file was `exercise.doc'.
+%% 
+%% 
+%% Copyright (C) 1991 by Anselm Lingnau. All rights reserved. 
+%% 
+%% IMPORTANT NOTICE 
+%% 
+%% You are not allowed to change this file. You may however copy this file 
+%% to a different name and then change this copy. 
+%% 
+%% You are allowed to distribute this file under the condition that it is 
+%% distributed together with all files mentioned in the appropriate README 
+%% file. If you received only some of these files from someone, complain! 
+%% 
+%% You are NOT ALLOWED to distribute this file alone. You are NOT ALLOWED 
+%% to take money for the distribution or use of this file (or a changed 
+%% version) except for some nominal charge for copying etc. 
+%% 
+%% Error Reports in case of UNCHANGED versions to 
+%% 
+%% Anselm Lingnau 
+%% Buchenweg 1 
+%% D-6239 Eppstein 2 
+%% Federal Republic of Germany 
+%% Internet lingnau@informatik.uni-frankfurt.de 
+%% 
+deffileversion{v1.0c}
+deffiledate{911008}
+defdocdate{911008}
+
+%% CheckSum{139}
+%% CharacterTable
+%%  {Upper-case    ABCDEFGHIJKLMNOPQRSTUVWXYZ
+%%   Lower-case    abcdefghijklmnopqrstuvwxyz
+%%   Digits        0123456789
+%%   Exclamation   !     Double quote       Hash (number) #
+%%   Dollar        $     Percent       %     Ampersand     &
+%%   Acute accent  '     Left paren    (     Right paren   )
+%%   Asterisk           Plus          +     Comma         ,
+%%   Minus         -     Point         .     Solidus       
+%%   Colon              Semicolon     ;     Less than     
+%%   Equals        =     Greater than       Question mark 
+%%   Commercial at @     Left bracket  [     Backslash     
+%%   Right bracket ]     Circumflex    ^     Underscore    _
+%%   Grave accent  `     Left brace    {     Vertical bar  
+%%   Right brace   }     Tilde         ~}
+%%
+%% Style-option `exercise' to use with LaTeX v2.09
+%% Copyright (C) 1991 by Anselm Lingnau, all rights reserved.
+@ifundefined{exercise}{}{endinput}
+wlog{Style-Option `exercise'
+   fileversion space filedate  (AL)}
+wlog{English Documentation
+   @spaces @spaces space docdate  (AL)}
+newcounter{exercise}
+newifif@exnofixed
+defnumberexercises#1{%
+  if@exnofixed@warning{Exercise numbering already fixed}
+  else@addtoreset{exercise}{#1}%
+     renewcommand{theexercise}{csname
+        the#1endcsname--arabic{exercise}}fi
+  @exnofixedtrue}
+defexercisehead#1#2{defexercise@head{#1{theexercise}#2}}
+exercisehead{bf}{}
+defexenvname{exercise}
+defexercise{medbreak@exnofixedtrue
+     refstepcounter{exercise}trivlistitem[]{exercise@head}}
+defendexercise{endtrivlist}
+defanswer{%
+  ifx@currenvirexenvnameletnext@answer
+    elseletnext@answererrfinext}
+def@answererr{errhelp{There may be no unmatched `begin' between
+     the^^J`begin{exercise}' and `answer'.}%
+    errmessage{LaTeX error Wrong stringanswerspace (current
+      environment is `@currenvir')}%
+    edef@tempa{{@currenvir}} expandafterend@tempa answer}
+def@answer{%
+   immediatewriteans{stringansno{theexercise}}
+  letdo@makeotherdospecials catcode`^^Mactive
+  letverbatim@processline=answer@processline
+  verbatim@start}
+defanswer@processline{immediatewriteans{theverbatim@line}}
+defexercisetitle{Exercises}
+@ifundefined{chapter}{letexsectionsubsection}%
+    {letexsectionsection}
+newenvironment{exercises}{exsection{exercisetitle}}{}
+newwriteans
+immediateopenoutans=jobname.ans
+typeout{Writing answers to jobname.ans.}
+deflistanswers{immediatecloseoutans inputjobname.ansrelax}
+defansno#1{par{deftheexercise{#1}exercise@head}}
+endinput
+%% 
+%% End of file `exercise.sty'.
