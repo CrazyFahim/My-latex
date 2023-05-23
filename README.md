@@ -5,7 +5,8 @@ My shitty attempt to use latex in vscode in an unorthodox manner  :")
 [LINK 1](https://www.youtube.com/watch?v=5jmIHOWpEg0)\
 [LINK 2](https://www.youtube.com/watch?v=ydOTMQC7np0&t=1206s)\
 [LINK 3](https://www.youtube.com/watch?v=y8y_KIs9JLs)\
-[This playlist](https://www.youtube.com/playlist?list=PLHXZ9OQGMqxcWWkx2DMnQmj5os2X5ZR73)
+[This playlist](https://www.youtube.com/playlist?list=PLHXZ9OQGMqxcWWkx2DMnQmj5os2X5ZR73)\
+This [repo](https://github.com/LxMLS/lxmls-guide) has sweet stuffs
 
 \(NB: new links will be added in future.) 
 
@@ -16,4 +17,5 @@ My shitty attempt to use latex in vscode in an unorthodox manner  :")
 
 # MiKTeX installation: 
 [link](https://miktex.org/howto/install-miktex)
+
 
